@@ -85,6 +85,7 @@ pipeline {
                     echo "kaweewat"
                     echo "Building Docker image: ${DOCKER_REPO}:${BUILD_NUMBER}"
                     docker.build("${DOCKER_REPO}:${BUILD_NUMBER}", "--target production .")
+                    echo "kaweewat build completed."
                 }
             }
         }
