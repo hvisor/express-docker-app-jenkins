@@ -82,6 +82,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
+                    echo "kaweewat"
                     echo "Building Docker image: ${DOCKER_REPO}:${BUILD_NUMBER}"
                     docker.build("${DOCKER_REPO}:${BUILD_NUMBER}", "--target production .")
                 }
