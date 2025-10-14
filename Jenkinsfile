@@ -191,3 +191,4 @@ pipeline {
             sendNotificationToN8n('failed', 'Pipeline')
         }
     }
+}
