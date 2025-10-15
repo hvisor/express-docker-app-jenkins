@@ -66,6 +66,7 @@ pipeline {
         APP_NAME                  = "express-docker-app-jenkins"
     }
 
+
     // กำหนด stages ของ Pipeline
     stages {
 
