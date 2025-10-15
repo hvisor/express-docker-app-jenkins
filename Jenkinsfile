@@ -61,7 +61,7 @@ pipeline {
 
     // กำหนด environment variables
     environment {
-        DOCKER_HUB_CREDENTIALS_ID = 'dockerhub-cred'
+        DOCKER_HUB_CREDENTIALS_ID = 'jenkins_access_tokens2'
         DOCKER_REPO               = "hvisor/express-docker-app-jenkins"
         APP_NAME                  = "express-docker-app-jenkins"
     }
