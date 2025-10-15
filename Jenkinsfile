@@ -20,6 +20,7 @@ pipeline {
             }
         }
 
+
         // Stage 2: ติดตั้ง dependencies และรันเทสต์
         stage('Install & Test') {
             steps {
