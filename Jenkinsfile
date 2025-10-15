@@ -172,6 +172,7 @@ pipeline {
             post {
                 success {
                     // sendNotificationToN8n('deployed', 'Deploy Local')
+                    echo "Pipeline succeeded!"
                 }
             }
         }
@@ -188,6 +189,7 @@ pipeline {
             echo "Pipeline succeeded!"
         }
         failure {
+            echo "Pipeline fail!"
             // ส่งข้อมูลไปยัง n8n webhook เมื่อ pipeline ล้มเหลว
             // sendNotificationToN8n('failed', 'Pipeline')
         }
